@@ -1,0 +1,141 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="55%" stop-color="#0b1433" />
+      <stop offset="100%" stop-color="#111c44" />
+    </linearGradient>
+    <radialGradient id="nebulaA" cx="30%" cy="25%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="nebulaB" cx="75%" cy="78%" r="55%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="strongGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .star { fill: #ffffff; }
+      .orbit { fill: none; stroke: #1e3a5f; stroke-width: 1; stroke-dasharray: 5 7; opacity: 0.5; }
+      .signal { stroke: #60a5fa; stroke-width: 1.4; stroke-dasharray: 4 5; opacity: 0.45; fill: none; }
+      .node { fill: #0f172a; stroke: #60a5fa; stroke-width: 2; filter: url(#glow); }
+      .node-core { fill: #1e3a5f; stroke: #f59e0b; stroke-width: 2.4; filter: url(#strongGlow); }
+      .title { fill: #f8fafc; font-size: 26px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; }
+      .subtitle { fill: #7dd3fc; font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1px; }
+      .label-box { fill: #0b1227; stroke: #1e3a5f; stroke-width: 1.2; }
+      .label { fill: #e2e8f0; font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .hint { fill: #60a5fa; font-size: 11px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .flagship-label { fill: #f8fafc; font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .flagship-hint { fill: #fbbf24; font-size: 11px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" rx="18" fill="url(#bg)"/>
+  <rect width="100%" height="100%" rx="18" fill="url(#nebulaA)"/>
+  <rect width="100%" height="100%" rx="18" fill="url(#nebulaB)"/>
+
+  <!-- Star field -->
+  <g opacity="0.7">
+    <circle class="star" cx="40" cy="34" r="1.1"/><circle class="star" cx="92" cy="60" r="0.9"/>
+    <circle class="star" cx="130" cy="38" r="1.0"/><circle class="star" cx="186" cy="72" r="0.8"/>
+    <circle class="star" cx="240" cy="44" r="1.0"/><circle class="star" cx="302" cy="76" r="1.1"/>
+    <circle class="star" cx="360" cy="36" r="0.9"/><circle class="star" cx="422" cy="58" r="0.8"/>
+    <circle class="star" cx="488" cy="34" r="1.1"/><circle class="star" cx="550" cy="64" r="0.9"/>
+    <circle class="star" cx="606" cy="40" r="1.0"/><circle class="star" cx="668" cy="70" r="1.0"/>
+    <circle class="star" cx="724" cy="36" r="0.9"/><circle class="star" cx="784" cy="62" r="0.8"/>
+    <circle class="star" cx="846" cy="44" r="1.0"/><circle class="star" cx="52" cy="124" r="0.8"/>
+    <circle class="star" cx="114" cy="156" r="1.0"/><circle class="star" cx="176" cy="132" r="0.9"/>
+    <circle class="star" cx="740" cy="146" r="0.8"/><circle class="star" cx="804" cy="122" r="1.0"/>
+    <circle class="star" cx="862" cy="154" r="0.9"/><circle class="star" cx="72" cy="228" r="0.8"/>
+    <circle class="star" cx="826" cy="246" r="1.0"/><circle class="star" cx="882" cy="220" r="1.1"/>
+    <circle class="star" cx="60" cy="344" r="0.9"/><circle class="star" cx="118" cy="372" r="1.0"/>
+    <circle class="star" cx="786" cy="362" r="0.8"/><circle class="star" cx="852" cy="338" r="1.0"/>
+    <circle class="star" cx="44" cy="458" r="1.0"/><circle class="star" cx="110" cy="432" r="0.8"/>
+    <circle class="star" cx="184" cy="460" r="0.9"/><circle class="star" cx="752" cy="446" r="0.8"/>
+    <circle class="star" cx="820" cy="470" r="1.0"/><circle class="star" cx="878" cy="438" r="0.9"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="52" text-anchor="middle" class="title">SHUCHITA CONSTELLATION</text>
+  <text x="450" y="73" text-anchor="middle" class="subtitle">// click a beacon to dock into a repo</text>
+
+  <!-- Orbit ring around core -->
+  <circle class="orbit" cx="450" cy="262" r="190"/>
+
+  <!-- Signal lines from satellites to core -->
+  <line x1="185" y1="148" x2="450" y2="262" class="signal"/>
+  <line x1="715" y1="148" x2="450" y2="262" class="signal"/>
+  <line x1="185" y1="390" x2="450" y2="262" class="signal"/>
+  <line x1="715" y1="390" x2="450" y2="262" class="signal"/>
+
+  <!-- Core glow halo -->
+  <circle cx="450" cy="262" r="42" fill="url(#coreGlow)"/>
+
+  <!-- awesome-ai-setup — CENTER CORE -->
+  <a href="https://github.com/shuchitajain/awesome-ai-setup">
+    <g>
+      <circle cx="450" cy="262" r="16" class="node-core"/>
+      <rect x="474" y="240" width="212" height="36" rx="7" class="label-box"/>
+      <text x="486" y="260" class="flagship-label">⭐ awesome-ai-setup</text>
+      <text x="486" y="273" class="flagship-hint">workflow stack · core</text>
+      <title>awesome-ai-setup — workflow stack</title>
+    </g>
+  </a>
+
+  <!-- story-agent — TOP LEFT -->
+  <a href="https://github.com/shuchitajain/story-agent">
+    <g>
+      <circle cx="185" cy="148" r="9" class="node"/>
+      <rect x="205" y="130" width="162" height="34" rx="6" class="label-box"/>
+      <text x="217" y="150" class="label">story-agent</text>
+      <text x="217" y="161" class="hint">planning core</text>
+      <title>story-agent — planning core</title>
+    </g>
+  </a>
+
+  <!-- pr-scout — TOP RIGHT -->
+  <a href="https://github.com/shuchitajain/pr-scout">
+    <g>
+      <circle cx="715" cy="148" r="9" class="node"/>
+      <rect x="533" y="130" width="162" height="34" rx="6" class="label-box"/>
+      <text x="545" y="150" class="label">pr-scout</text>
+      <text x="545" y="161" class="hint">criteria checks</text>
+      <title>pr-scout — criteria checks</title>
+    </g>
+  </a>
+
+  <!-- MovieDeck — BOTTOM LEFT -->
+  <a href="https://github.com/shuchitajain/MovieDeck">
+    <g>
+      <circle cx="185" cy="390" r="9" class="node"/>
+      <rect x="205" y="372" width="150" height="34" rx="6" class="label-box"/>
+      <text x="217" y="392" class="label">MovieDeck</text>
+      <text x="217" y="403" class="hint">flutter + gemini</text>
+      <title>MovieDeck — Flutter + Gemini</title>
+    </g>
+  </a>
+
+  <!-- tech-debt-agent — BOTTOM RIGHT -->
+  <a href="https://github.com/shuchitajain/tech-debt-agent">
+    <g>
+      <circle cx="715" cy="390" r="9" class="node"/>
+      <rect x="533" y="372" width="172" height="34" rx="6" class="label-box"/>
+      <text x="545" y="392" class="label">tech-debt-agent</text>
+      <text x="545" y="403" class="hint">risk radar</text>
+      <title>tech-debt-agent — risk radar</title>
+    </g>
+  </a>
+
+</svg>

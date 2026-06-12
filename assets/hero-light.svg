@@ -1,0 +1,44 @@
+<svg width="1600" height="360" viewBox="0 0 1600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E0F2FE"/>
+      <stop offset="0.5" stop-color="#DBEAFE"/>
+      <stop offset="1" stop-color="#F5F3FF"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0EA5E9" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14B8A6" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#0EA5E9" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="360" rx="24" fill="url(#bg)"/>
+
+  <circle cx="1280" cy="80" r="220" fill="url(#accent1)"/>
+  <circle cx="220" cy="310" r="260" fill="url(#accent2)"/>
+
+  <g opacity="0.25" stroke="#0F172A" stroke-width="1">
+    <path d="M0 75H1600"/>
+    <path d="M0 140H1600"/>
+    <path d="M0 205H1600"/>
+    <path d="M0 270H1600"/>
+    <path d="M200 0V360"/>
+    <path d="M500 0V360"/>
+    <path d="M800 0V360"/>
+    <path d="M1100 0V360"/>
+    <path d="M1400 0V360"/>
+  </g>
+
+  <g fill="#0F172A" opacity="0.45" font-family="monospace" font-size="16">
+    <text x="110" y="72">flutter run --release</text>
+    <text x="1115" y="314">agent.execute(context)</text>
+  </g>
+
+  <g fill="#0F172A" font-family="Segoe UI, Arial, sans-serif">
+    <text x="100" y="178" font-size="74" font-weight="700">Shuchita Jain</text>
+    <text x="104" y="220" font-size="26" opacity="0.8">Senior Flutter Developer | AI-native engineering systems</text>
+  </g>
+</svg>
