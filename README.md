@@ -26,7 +26,7 @@ const shuchita = Engineer(
   ],
   mobileStack: ['Flutter', 'Dart', 'Firebase', 'SDUI', 'offline-first architecture'],
   aiStack: ['agent orchestration', 'CI-grade acceptance gates', 'MCP'],
-  currentBuild: 'story-agent — planning core for AI-augmented delivery',
+  currentBuild: 'story-agent, planning core for AI-augmented delivery',
   writingAt: 'medium.com/@coderSJ',
   mode: 'planning-first, measurable outcomes, architecture before automation',
 );
@@ -56,15 +56,17 @@ const shuchita = Engineer(
 ## Project Constellation
 
 <div align="center">
-	<img width="96%" src="./assets/project-atlas.svg" usemap="#project-atlas-map" alt="Space exploration style project constellation map with clickable repository beacons" />
+	<a href="https://github.com/shuchitajain?tab=repositories">
+		<img width="96%" src="./assets/project-atlas.svg" alt="Project constellation map" />
+	</a>
 </div>
 
 <map name="project-atlas-map">
-	<area shape="circle" coords="486,283,18" href="https://github.com/shuchitajain/awesome-ai-setup" alt="awesome-ai-setup" title="⭐ awesome-ai-setup — workflow stack" />
-	<area shape="circle" coords="200,160,12" href="https://github.com/shuchitajain/story-agent" alt="story-agent" title="story-agent — planning core" />
-	<area shape="circle" coords="772,160,12" href="https://github.com/shuchitajain/pr-scout" alt="pr-scout" title="pr-scout — criteria checks" />
-	<area shape="circle" coords="200,421,12" href="https://github.com/shuchitajain/MovieDeck" alt="MovieDeck" title="MovieDeck — Flutter + Gemini" />
-	<area shape="circle" coords="772,421,12" href="https://github.com/shuchitajain/tech-debt-agent" alt="tech-debt-agent" title="tech-debt-agent — risk radar" />
+	<area shape="circle" coords="486,283,18" href="https://github.com/shuchitajain/awesome-ai-setup" alt="awesome-ai-setup" title="⭐ awesome-ai-setup, workflow stack" />
+	<area shape="circle" coords="200,160,12" href="https://github.com/shuchitajain/story-agent" alt="story-agent" title="story-agent, planning core" />
+	<area shape="circle" coords="772,160,12" href="https://github.com/shuchitajain/pr-scout" alt="pr-scout" title="pr-scout, criteria checks" />
+	<area shape="circle" coords="200,421,12" href="https://github.com/shuchitajain/MovieDeck" alt="MovieDeck" title="MovieDeck, Flutter + Gemini" />
+	<area shape="circle" coords="772,421,12" href="https://github.com/shuchitajain/tech-debt-agent" alt="tech-debt-agent" title="tech-debt-agent, risk radar" />
 </map>
 
 Fallback docking index:
@@ -128,22 +130,19 @@ Fallback docking index:
 <td width="33%" valign="top">
 
 ⚙️ **Agent Infrastructure**
-Context, memory, orchestration, MCP.
-<sub>Where agents lose track — and how to stop them.</sub>
+<p>Agents forget. They drift. They confidently act on context that stopped being true three tool calls ago. What does it actually take to keep one coherent?</p>
 
 </td>
 <td width="33%" valign="top">
 
 🛡️ **Safety & Governance**
-Boundaries, auditing, prompt injection.
-<sub>What agents are allowed to touch — and what audits that.</sub>
+<p>The scariest prompt injections don't look like attacks. They look like normal user input. Where do you even draw the line, and who enforces it?</p>
 
 </td>
 <td width="33%" valign="top">
 
 🔭 **Agent Observability**
-Flight recording, session replay, cost tracing.
-<sub>Reconstructing what the agent did and what it cost.</sub>
+<p>If your agent makes a bad call at 2am, can you reconstruct exactly what it saw, what it decided, and what it cost? Most setups can't.</p>
 
 </td>
 </tr>
@@ -151,22 +150,19 @@ Flight recording, session replay, cost tracing.
 <td width="33%" valign="top">
 
 🧠 **Codebase Intelligence**
-Repo understanding, debt, knowledge graphs.
-<sub>Making large codebases legible without full-context dumps.</sub>
+<p>A codebase isn't a document. It's a set of decisions made by people who've since left. Getting an agent to understand that, without reading everything, is the unsolved part.</p>
 
 </td>
 <td width="33%" valign="top">
 
 🚀 **AI-Augmented Delivery**
-Team workflows, model routing, review discipline.
-<sub>Fitting agents into real teams without new failure modes.</sub>
+<p>Adding an agent to a team is easy. Not breaking the team's existing trust and review culture while doing it, that's the part nobody writes about.</p>
 
 </td>
 <td width="33%" valign="top">
 
 📱 **Mobile × AI**
-Flutter patterns, SDUI, agent-powered tooling.
-<sub>Mobile architecture that survives LLM-assisted codegen.</sub>
+<p>Mobile apps have hard constraints: offline states, small screens, slow networks. Most AI tooling ignores all of that. What changes when it can't?</p>
 
 </td>
 </tr>

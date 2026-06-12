@@ -69,8 +69,6 @@
 
   <!-- Title -->
   <text x="450" y="52" text-anchor="middle" class="title">SHUCHITA CONSTELLATION</text>
-  <text x="450" y="73" text-anchor="middle" class="subtitle">// click a beacon to dock into a repo</text>
-
   <!-- Orbit ring around core -->
   <circle class="orbit" cx="450" cy="262" r="190"/>
 
